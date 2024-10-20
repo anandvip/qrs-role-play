@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Pitch Role-Play Training Slides</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .slide {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            display: none;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow-y: auto;
+        }
+        .slide.active {
+            display: block;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        p, ul {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        ul {
+            margin-left: 20px;
+            padding-left: 15px;
+        }
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .nav-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .training-time {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="training-time">Training Time: 30 minutes</div>
+
+    <div id="slide1" class="slide active">
+        <h1>Scenario 1: Efficacy of QRS101 in Back Pain Management</h1>
+        <h2>Sales Rep:</h2>
+        <p>"Hello Dr. Mehta, thank you for your time. I'd like to introduce you to our QRS101 device, designed to help patients with chronic back pain through Pulsed Electromagnetic Field (PEMF) therapy."</p>
+        <h2>Objection:</h2>
+        <p>"I'm not sure this technology is effective enough for my patients."</p>
+        <h2>Response:</h2>
+        <p>"I understand, Dr. Mehta. QRS101 uses PEMF to stimulate cellular regeneration and improve microcirculation.</p>
+        <ul>
+            <li>PEMF (Pulsed Electromagnetic Field) means we use low-level electromagnetic waves to encourage cells to repair themselves.</li>
+            <li>Cellular regeneration helps the body's cells heal faster.</li>
+            <li>Microcirculation refers to increased blood flow in the small blood vessels around the painful areas, which speeds up healing.</li>
+        </ul>
+        <p>Patients report a 30-40% reduction in pain over a few weeks of use."</p>
+        <h2>Close:</h2>
+        <p>"We'd love for you to see this in action. Could you visit our clinic next Tuesday at 3 PM for a demonstration?"</p>
+    </div>
+
+    <div id="slide2" class="slide">
+        <h1>Scenario 2: Integration with Existing Treatments</h1>
+        <h2>Sales Rep:</h2>
+        <p>"Good afternoon, Dr. Singh. Our QRS101 device can support your current treatments for back pain, including physiotherapy or medications."</p>
+        <h2>Objection:</h2>
+        <p>"I already use effective treatments like physiotherapy. How does this fit in?"</p>
+        <h2>Response:</h2>
+        <p>"I understand. QRS101 works synergistically with other treatments.</p>
+        <ul>
+            <li>Synergistically means it helps other treatments work even better. For example, QRS101 helps increase cellular metabolism before physiotherapy.</li>
+            <li>Cellular metabolism is the process by which cells use energy—when this is increased, the cells can repair themselves more efficiently.</li>
+        </ul>
+        <p>This means that physiotherapy can be more effective since the muscles are already better prepared. Patients who use QRS101 often report needing fewer physiotherapy sessions because they recover faster."</p>
+        <h2>Close:</h2>
+        <p>"Would next Wednesday at 2 PM work for you to come see the device in action?"</p>
+    </div>
+
+    <div id="slide3" class="slide">
+        <h1>Scenario 3: Cost Concerns</h1>
+        <h2>Sales Rep:</h2>
+        <p>"Dr. Verma, the QRS101 can be a valuable addition to help your patients manage their back pain."</p>
+        <h2>Objection:</h2>
+        <p>"I'm concerned about the cost—many of my patients can't afford extra treatment."</p>
+        <h2>Response:</h2>
+        <p>"I completely understand, Dr. Verma. QRS101 can help reduce the need for long-term NSAIDs and other treatments.</p>
+        <ul>
+            <li>NSAIDs are medications like ibuprofen used to reduce pain, but they can have side effects over time.</li>
+        </ul>
+        <p>By using QRS101, patients often rely less on these medications, which means they save money and avoid side effects. Patients usually feel better after a few sessions, and it helps them have fewer follow-up visits as well."</p>
+        <h2>Close:</h2>
+        <p>"Would you be available next Friday at 11 AM to see how it works in a live demo?"</p>
+    </div>
+
+    <div id="slide4" class="slide">
+        <h1>Scenario 4: Safety Concerns</h1>
+        <h2>Sales Rep:</h2>
+        <p>"Hello Dr. Sharma, I wanted to discuss the benefits of QRS101 for your back pain patients."</p>
+        <h2>Objection:</h2>
+        <p>"I'm concerned about the safety—how do I know it's safe for my patients?"</p>
+        <h2>Response:</h2>
+        <p>"Absolutely, Dr. Sharma. The QRS101 is FDA-cleared and uses non-ionizing radiation, which makes it completely safe.</p>
+        <ul>
+            <li>FDA-cleared means that it meets the safety standards set by health authorities.</li>
+            <li>Non-ionizing radiation is a type of energy that doesn't cause any harm to the tissues; it's the same type of radiation that's used in MRI scans.</li>
+        </ul>
+        <p>We have not observed any negative side effects, and it's been proven to be safe for both long-term and short-term use."</p>
+        <h2>Close:</h2>
+        <p>"We'd love for you to see it in use. How about Thursday at 4 PM for a quick demonstration?"</p>
+    </div>
+
+    <div id="slide5" class="slide">
+        <h1>Scenario 5: Seeing Results Before Commitment</h1>
+        <h2>Sales Rep:</h2>
+        <p>"Good afternoon, Dr. Kapoor. I wanted to share how the QRS101 can help with managing chronic back pain."</p>
+        <h2>Objection:</h2>
+        <p>"I've heard about similar devices, but I need proof that it really works."</p>
+        <h2>Response:</h2>
+        <p>"I completely understand. The QRS101 has helped many patients with lumbar spondylosis and other back pain conditions.</p>
+        <ul>
+            <li>Lumbar spondylosis is a type of arthritis that affects the lower spine.</li>
+        </ul>
+        <p>Patients have reported a 50% reduction in pain levels within 8 weeks, and they could resume activities like walking without pain. We'd love to show you the results in person during a demo."</p>
+        <h2>Close:</h2>
+        <p>"Could you come by next Monday at 1 PM to see the device and speak with patients who've used it?"</p>
+    </div>
+
+    <div class="navigation">
+        <button id="prevBtn" class="nav-btn">Previous</button>
+        <button id="nextBtn" class="nav-btn">Next</button>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 5;
+
+        function showSlide(slideNumber) {
+            document.querySelectorAll('.slide').forEach(slide => slide.classList.remove('active'));
+            document.getElementById(`slide${slideNumber}`).classList.add('active');
+            currentSlide = slideNumber;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                showSlide(currentSlide + 1);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        document.getElementById('nextBtn').addEventListener('click', nextSlide);
+        document.getElementById('prevBtn').addEventListener('click', prevSlide);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        const hammer = new Hammer(document.body);
+        hammer.on('swipeleft', nextSlide);
+        hammer.on('swiperight', prevSlide);
+    </script>
+</body>
+</html>
